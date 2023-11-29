@@ -30,6 +30,7 @@ function buildHeader() {
         displayContact();
     })
 
+    header.id = "header"
     header.appendChild(logo);
     headerNav.appendChild(homeBtn);
     headerNav.appendChild(menuBtn);
@@ -41,7 +42,14 @@ function buildHeader() {
 
 function buildFooter() {
     const footer = document.createElement('footer');
+    const copyright = document.createElement('p');
+    const currDate = new Date();
 
+    footer.id = "footer";
+
+    copyright.textContent = `Copyright © ${currDate.getFullYear()} JChow`
+
+    footer.appendChild(copyright);
 
     return footer;
 }
