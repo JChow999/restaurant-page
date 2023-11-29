@@ -5,7 +5,7 @@
     "webpack": "^5.89.0",
     "webpack-cli": "^5.1.4"
   },
-  "name": "restaurant-page",
+  "name": "catfe-restaurant-page",
   "version": "1.0.0",
   "description": "Restaurant practice",
   "main": "index.js",

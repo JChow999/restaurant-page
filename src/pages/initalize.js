@@ -1,6 +1,6 @@
-import { displayHome } from "./home";
 import { displayMenu } from "./menu";
 import { displayContact } from "./contact";
+import { displayHome } from "./home";
 
 function buildHeader() {
     const header = document.createElement('header');
@@ -10,7 +10,7 @@ function buildHeader() {
     const contactBtn = document.createElement('button');
     const logo = document.createElement('h1');
 
-    logo.innerText = "Caturday";
+    logo.innerText = "Catfe Restaurant";
 
     homeBtn.innerHTML = "Home";
     homeBtn.className = "home-btn";
