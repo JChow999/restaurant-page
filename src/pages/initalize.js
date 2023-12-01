@@ -2,6 +2,10 @@ import { displayMenu } from "./menu";
 import { displayContact } from "./contact";
 import { displayHome } from "./home";
 
+/**
+ * Initalize page by adding header and footer.
+ * @return {string} - is for providing the html code for the header
+ */
 function buildHeader() {
     const header = document.createElement('header');
     const headerNav = document.createElement('div');
@@ -40,6 +44,10 @@ function buildHeader() {
     return header;
 }
 
+/**
+ * Initalize page by adding footer.
+ * @return {string} - is for providing the html code for the footer
+ */
 function buildFooter() {
     const footer = document.createElement('footer');
     const copyright = document.createElement('p');

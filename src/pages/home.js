@@ -1,3 +1,6 @@
+/**
+ * Create home page.
+ */
 
 function displayHome() {
     const content = document.querySelector('#content')
