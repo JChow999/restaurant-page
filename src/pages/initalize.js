@@ -3,7 +3,7 @@ import { displayContact } from "./contact";
 import { displayHome } from "./home";
 
 /**
- * Initalize page by adding header and footer.
+ * Initalize page by adding header.
  * @return {string} - is for providing the html code for the header
  */
 function buildHeader() {

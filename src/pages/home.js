@@ -1,7 +1,6 @@
 /**
  * Create home page.
  */
-
 function displayHome() {
     const content = document.querySelector('#content')
     const title = document.createElement('h2');
@@ -31,7 +30,6 @@ function displayHome() {
     content.appendChild(locationTitle);
     content.appendChild(locations);
     content.appendChild(googleMap);
-    console.log("Hello");
 }
 
 export {displayHome}
