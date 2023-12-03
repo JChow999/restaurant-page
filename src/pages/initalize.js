@@ -7,6 +7,7 @@ import { displayHome } from "./home";
  * @return {string} - is for providing the html code for the header
  */
 function buildHeader() {
+    const content = document.querySelector('#content');
     const header = document.createElement('header');
     const headerNav = document.createElement('div');
     const homeBtn = document.createElement('button');
@@ -19,19 +20,22 @@ function buildHeader() {
     homeBtn.innerHTML = "Home";
     homeBtn.className = "home-btn";
     homeBtn.addEventListener('click', () => {
-        displayHome();
+        content.innerHTML = "";
+        content.innerHTML = displayHome();
     })
 
     menuBtn.innerHTML = "Menu";
     menuBtn.className = "menu-btn";
     menuBtn.addEventListener("click", () => {
-        displayMenu();
+        content.innerHTML = "";
+        content.innerHTML = displayMenu();
     })
 
     contactBtn.innerHTML = "Contact";
     contactBtn.className = "contact-btn";
     contactBtn.addEventListener('click', () => {
-        displayContact();
+        content.innerHTML = "";
+        content.innerHTML = displayContact();
     })
 
     header.id = "header"

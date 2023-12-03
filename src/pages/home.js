@@ -1,11 +1,13 @@
 /**
  * Create home page.
+ * @return {string} - Return
  */
 function displayHome() {
-    const content = document.querySelector('#content')
+    const content = document.createElement('div')
     const title = document.createElement('h2');
     const para = document.createElement("p");
-    const locationTitle = document.createElement('h2');
+    const locationTitle = document.createElement('h3');
+    const lineBreak = document.createElement('br');
     const locations = document.createElement("p");
     const googleMap = document.createElement("iframe");
 
@@ -27,9 +29,12 @@ function displayHome() {
     content.innerHTML = "";
     content.appendChild(title);
     content.appendChild(para);
+    content.appendChild(lineBreak);
     content.appendChild(locationTitle);
     content.appendChild(locations);
     content.appendChild(googleMap);
+
+    return content.innerHTML;
 }
 
 export {displayHome}

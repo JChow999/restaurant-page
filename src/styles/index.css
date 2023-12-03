@@ -1,8 +1,10 @@
 :root {
-    font-size: 18px;
+    font-size: 16px;
     --header-height: 14vh;
     --footer-height: 7vh;
     --content-margin-vert: 4vh;
+    --content-padding-vert: 3vh;
+    --content-padding-hori: 4vw;
     background: 
     linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(125, 184, 110, 0.4) ),
     url("https://images.squarespace-cdn.com/content/v1/555050d2e4b06f76bea1ba86/1530062644635-4SNSG63LWB4LY2MZCE4T/sunnycover2.jpg?format=2500w");
@@ -16,6 +18,10 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+h3 {
+    margin-top: 1rem;
 }
 
 #header {
@@ -47,9 +53,9 @@ button {
 
 #content {
     min-height: calc(100vh - var(--header-height) - 
-    var(--footer-height) - var(--content-margin-vert));
+    var(--footer-height) - var(--content-margin-vert) - var(--content-padding-vert));
     margin: var(--content-margin-vert) 4vw;
-    padding: 3vw;
+    padding: var(--content-padding-vert) var(--content-padding-hori);
     background-color: rgba(255, 255, 255, .7);
     line-height: 1.5rem;
 
@@ -62,19 +68,32 @@ button {
     }
 }
 
+.grid-div {
+    display: grid;
+}
+
 form {
     display: flex;
+    background-color: rgba(0,0,0,0.2);
     flex-direction: column;
     margin: 10px 0px 40px 0;
+    padding: 20px;
 
-    & * {
-        margin: 10px;
+    & input, & textarea {
+        margin: 10px 0;
+        padding: 5px;
     }
 }
 
-.form-row {
+.form-div {
     display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     flex-wrap: wrap;
+
+    & input {
+        min-width: 200px;
+    }
 }
 
 .flex-center {

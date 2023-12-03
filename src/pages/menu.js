@@ -1,10 +1,16 @@
 /**
  * Displays the menu
+ * @return {string} - returns innerHTML of the menu page
  */
 function displayMenu() {
-    console.log('Display Menu')
+    const content = document.createElement('div');
+    const pageTitle = document.createElement('h2');
 
-    content.innerHTML = "";
+    pageTitle.innerText = "Menu";
+
+    content.appendChild(pageTitle);
+
+    return content.innerHTML;
 }
 
 export {displayMenu}
