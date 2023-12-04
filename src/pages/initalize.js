@@ -39,6 +39,8 @@ function buildHeader() {
     })
 
     header.id = "header"
+    headerNav.className = 'header-nav';
+
     header.appendChild(logo);
     headerNav.appendChild(homeBtn);
     headerNav.appendChild(menuBtn);
